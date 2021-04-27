@@ -13,7 +13,7 @@ Database name: `laravel_fortify`
 ## Run tinker and Create Fake Users using User Factory
 `php artisan tinker`
 
-`Post::factory()->count(5)->create();`
+`Post::factory()->count(5)->create();`<br/>
 *that will create 5 fake users to users data*
 
 ## Fortify Configurations
