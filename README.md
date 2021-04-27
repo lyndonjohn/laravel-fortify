@@ -1,3 +1,6 @@
+## Install composer package
+`composer install`
+
 ## Generate New .env
 Save as .env.example to .env
 
