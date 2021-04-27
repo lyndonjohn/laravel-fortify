@@ -21,13 +21,14 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     $users = User::all();
-
     return view('home.dashboard', compact('users'));
 })
     ->name('dashboard')
     ->middleware(['auth', 'verified']);
 
-Route::get('/users/{user}', [UserController::class, 'edit'])->middleware(['auth', 'verified']);
+Route::get('/users/{user}', [UserController::class, 'edit'])
+    ->name('users.edit')
+    ->middleware(['auth', 'verified']);
 
 Route::post('/users/{user}', [UserController::class, 'update'])
     ->name('users.edit')
