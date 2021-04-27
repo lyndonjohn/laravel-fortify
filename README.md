@@ -30,13 +30,9 @@ Database name: `laravel_fortify`
 
 3. Run migration<br>
 `php artisan migrate`
-
-
-4. Include fortify service provider in config/app.php, in application provider section<br>
-`App\Providers\FortifyServiceProvider::class`
    
 
-5. Create login, registerview in FortifyServiceProvider.php, `boot` method<br>
+4. Create login, registerview in FortifyServiceProvider.php, `boot` method<br>
 ```
 // login view
 Fortify::loginView(function() {
