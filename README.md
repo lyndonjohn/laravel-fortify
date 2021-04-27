@@ -5,7 +5,7 @@ Save as .env.example to .env
 `php artisan key:generate`
 
 ## Edit .env database configuration
-Database name: `laravel_fortity`
+Database name: `laravel_fortify`
 
 ## Run migration
 `php artisan migrate`
