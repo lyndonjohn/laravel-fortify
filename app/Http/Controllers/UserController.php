@@ -42,20 +42,3 @@ class UserController extends Controller
         return back()->with('message', 'User deleted!');
     }
 }
-
-/*
- * Install
- * composer require laravel/fortify
- *
- * Publish service provider
- * php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
- *
- * php artisan migrate
- *
- * Include fortify service service provider in config/app.php
- * App\Providers\FortifyServiceProvider::class
- *
- * Create login, registerview in FortifyServiceProvider.php
- */
-
-
